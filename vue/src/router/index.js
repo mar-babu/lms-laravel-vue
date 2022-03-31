@@ -5,6 +5,7 @@ import Login from '../views/Login.vue';
 import Register from '../views/Register.vue';
 import store from '../store';
 import AuthLayout from "../components/AuthLayout.vue";
+import Book from '../views/Book.vue';
 
 const routes = [
     {
@@ -14,7 +15,8 @@ const routes = [
         component: DefaultLayout,
         meta: { requiresAuth: true },
         children: [
-            { path: '/dashboard', name: 'Dashboard', component: Dashboard}
+            { path: '/dashboard', name: 'Dashboard', component: Dashboard},
+            { path: '/book', name: 'Book', component: Book}
         ]
     },   
     {
